@@ -54,16 +54,16 @@ const Footer = () => {
                 <NavLink to="/" className="hover:underline transition-colors duration-300">Home</NavLink>
               </li>
               <li>
+                <NavLink to="/about-us" className="hover:underline transition-colors duration-300">About</NavLink>
+              </li>
+              <li>
                 <NavLink to="/services" className="hover:underline transition-colors duration-300">Services</NavLink>
               </li>
               <li>
                 <NavLink to="/blog" className="hover:underline transition-colors duration-300">Blog</NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="hover:underline transition-colors duration-300">About</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact" className="hover:underline transition-colors duration-300">Contact</NavLink>
+                <NavLink to="/contact-us" className="hover:underline transition-colors duration-300">Contact</NavLink>
               </li>
             </ul>
           </div>

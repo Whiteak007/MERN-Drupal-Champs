@@ -1,37 +1,9 @@
 import React from 'react';
+import { features } from '../assets/resources';
+import Button from './Button';
 
 const WhyChooseUs = () => {
-    const features = [
-        {
-            id: 1,
-            title: "Detail",
-            description: "We understand that, it is important to have accurate information before taking any step.",
-            image: "https://www.drupalchamp.org/sites/default/files/inline-images/Detail.png",
-            link: "#"
-        },
-        {
-            id: 2,
-            title: "Design",
-            description: "We have a team of creative designers who are proficient in creating stunning designs that are both aesthetically.",
-            image: "https://www.drupalchamp.org/sites/default/files/inline-images/Design.png",
-            link: "#"
-        },
-        {
-            id: 3,
-            title: "Develop",
-            description: "We are a team of passionate professionals who are committed to providing our customers with a comprehensive range.",
-            image: "https://www.drupalchamp.org/sites/default/files/inline-images/Develop.png",
-            link: "#"
-        },
-        {
-            id: 4,
-            title: "Deliver",
-            description: "We have set certain rules and regulations for the team members to follow and complete the task in the set time frame.",
-            image: "https://www.drupalchamp.org/sites/default/files/inline-images/Deliver.png",
-            link: "#"
-        }
-    ];
-
+    // Features Data came from resources.js file 
     return (
         <section className="py-16 bg-white">
             <div className="container mx-auto px-4">
@@ -67,11 +39,7 @@ const WhyChooseUs = () => {
                                 <h3 className="text-xl font-bold text-gray-800 mb-2">{feature.title}</h3>
                                 <p className="text-gray-600 mb-4">{feature.description}</p>
                                 <div className="text-center mt-12">
-                                    <button
-                                        onClick={() => window.location.href = feature.link}
-                                        className="bg-[#fe9900] hover:bg-[#0272ba] cursor-pointer text-white font-medium py-2 px-8 rounded-full transition duration-300">
-                                        View More
-                                    </button>
+                                    <Button text="View More" path="/" />
                                 </div>
                             </div>
                         </div>

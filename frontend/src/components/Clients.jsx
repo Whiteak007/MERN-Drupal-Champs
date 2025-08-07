@@ -1,19 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
+import { clients } from '../assets/resources';
 const Clients = () => {
-  // Client logos data
-  const clients = [
-    { id: 1, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2019-01/mwaa-logo.png?itok=DFEcaoGc" },
-    { id: 2, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2022-08/Screenshot_25.png?itok=nDljZRRx" },
-    { id: 3, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2022-08/Screenshot_10.png?itok=cHuBriDj" },
-    { id: 4, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2022-08/Screenshot_7.png?itok=gDLq_TBO" },
-    { id: 5, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2017-02/bvitourism-logo.jpg?itok=Z1qpUMlU" },
-    { id: 6, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2019-03/ozpartyevents.png?itok=Qs8sFr7l" },
-    { id: 7, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2022-08/Screenshot_3_0.png?itok=tSnEATtE" },
-    { id: 8, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2022-08/Screenshot_20.png?itok=B0PlSmjI" },
-    { id: 9, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2019-01/Topchefmeals.png?itok=CcSOwzCe" },
-    { id: 10, logo: "https://www.drupalchamp.org/sites/default/files/styles/our_clients/public/2022-08/Screenshot_7.png?itok=gDLq_TBO" }
-  ];
+  // Clients Data Came from resources.js file 
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [transition, setTransition] = useState(true);
@@ -40,9 +28,6 @@ const Clients = () => {
     setTransition(true);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % clients.length);
   };
-
-  // The `getVisibleClients` logic is now handled by repeating the `clients` array
-  // which simplifies the translation logic.
 
   return (
     <section className="py-16 bg-white"> {/* Changed background to white for better match */}

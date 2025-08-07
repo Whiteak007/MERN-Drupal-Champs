@@ -1,18 +1,10 @@
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
+import {timelineData} from '../assets/resources'
 const AboutUs = () => {
-  const timelineData = [
-    { year: "2004", content: "Started working on PHP" },
-    {
-      year: "2005",
-      content: "Started working on cutting Edge Content Management system like Drupal, WordPress, Joomla, jQuery, Javascript, HTML, CSS platforms"
-    },
-    { year: "2010", content: "Started working on API development and Symphony" },
-    { year: "2012", content: "Started working on Android studio and objective C" },
-    { year: "2016", content: "Started working in node.js and react.js" },
-  ];
+  // About Data came from resources.js file
+
   return (
     <div className="max-w-full overflow-hidden ">
       {/* Who We Are Section */}
