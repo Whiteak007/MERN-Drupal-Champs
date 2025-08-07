@@ -23,14 +23,14 @@ const Promotion = () => {
             <div className="text-5xl md:text-6xl lg:text-6xl font-bold uppercase text-white mt-4">
               <p>WEB / MOBILE APP</p>
             </div>
-            {/* <button className="mt-8 bg-[#fe9900] hover:bg-black cursor-pointer text-white font-bold py-3 px-8 rounded-full transition duration-300">
+            <button className="mt-8 bg-[#fe9900] hover:bg-black cursor-pointer text-white font-bold py-3 px-8 rounded-full transition duration-300">
               Get in Touch
-            </button> */}
-            <div className='flex items-center justify-center'>
+            </button>
+            {/* <div className='flex items-center justify-center'>
               <div className='mt-8 bg-[#fe9900] hover:bg-black cursor-pointer text-white font-bold py-2 px-6 rounded-full transition duration-300'>
                 <Button className="" text="Get in Touch" path="/" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
